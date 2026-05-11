@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MARVEL LUXE</title>
+<link rel="icon" type="image/png" href="images/logo-img.png">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+
+  <div class="brand">
+
+    <img src="images/logo-img.jpeg" alt="MARVEL LUXE Logo" class="logo-img">
+
+    <div class="logo">
+      MARVEL LUXE
+    </div>
+
+  </div>
+
+  <div class="cart-icon">
+    <i class="fa-solid fa-cart-shopping"></i>
+    <span id="cart-count">0</span>
+  </div>
+
+</header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Luxury Meets Modern Style</h1>
+
+    <p>
+      Luxury everyday accessories curated to elevate your lifestyle — from beauty essentials and mini gadgets to trendy fashion must-haves.
+
+    </p>
+  </section>
+
+  <!-- PRODUCTS -->
+<!-- MAIN LAYOUT -->
+<div class="main-layout">
+
+  <!-- PRODUCTS -->
+  <section class="products" id="products-container">
+
+    <!-- PRODUCTS FROM JAVASCRIPT -->
+
+  </section>
+
+  <!-- DESKTOP CART -->
+  <div class="cart-box">
+
+    <h2>Your Cart</h2>
+
+    <div id="cart-items">
+      <p class="empty">No items added.</p>
+    </div>
+
+    <div class="cart-total">
+      Total: ₦<span id="total">0</span>
+    </div>
+
+    <button class="checkout-btn" onclick="checkoutWhatsApp()">
+      <i class="fa-brands fa-whatsapp"></i>
+      Checkout to WhatsApp
+    </button>
+
+  </div>
+
+</div>
+
+<!-- MOBILE CART -->
+
+<div class="mobile-cart-overlay" id="mobile-cart-overlay">
+
+  <div class="mobile-cart">
+
+    <div class="mobile-cart-header">
+      <h2>Your Cart</h2>
+
+      <span class="close-cart" id="close-cart">
+        <i class="fa-solid fa-xmark"></i>
+      </span>
+    </div>
+
+    <div id="mobile-cart-items">
+      <p class="empty">No items added.</p>
+    </div>
+
+    <div class="cart-total">
+      Total: ₦<span id="mobile-total">0</span>
+    </div>
+
+    <button class="checkout-btn" onclick="checkoutWhatsApp()">
+      <i class="fa-brands fa-whatsapp"></i>
+      Checkout to WhatsApp
+    </button>
+
+  </div>
+
+</div>
+
+<!-- CONTACT SECTION -->
+
+<section class="contact-section">
+
+  <h2>Contact MARVEL LUXE</h2>
+
+  <p>
+    Follow us and stay updated with our latest luxury collections.
+  </p>
+
+  <div class="social-links">
+
+    <a href="https://www.tiktok.com/@marvelluxe.store" target="_blank">
+      <i class="fa-brands fa-tiktok"></i>
+      @marvelluxeessentials
+    </a>
+  </div>
+
+</section>
+  <!-- JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
