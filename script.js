@@ -330,20 +330,19 @@ function checkoutWhatsApp(){
 
   cart.forEach((item,index)=>{
 
-    message += `
-%0A${index + 1}. ${item.name}
-Quantity: ${item.quantity}
-Price: ₦${item.price.toLocaleString()}
-`;
-
     total += item.price * item.quantity;
 
+    message += `%0A${item.name}`;
+    message += `%0AQuantity: ${item.quantity}`;
+    message += `%0APrice: ₦${(item.price * item.quantity).toLocaleString()}%0A`;
   });
 
-  message += `%0A%0ATotal: ₦${total.toLocaleString()}`;
+  message += `%0ATotal Amount: ₦${total.toLocaleString()}`;
+
+  
 
   // CHANGE TO YOUR NUMBER
-  const phoneNumber = "23470405554227";
+  const phoneNumber = "234 704 055 4227";
 
   const url = `https://wa.me/${phoneNumber}?text=${message}`;
 
